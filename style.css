@@ -113,6 +113,7 @@ article p:first-of-type {
 /*-------------STARS---------------*/
 
 .skills li{
+  padding: 10px;
   color: #797979;
   transition: color 0.2s , font-size 0.2s;
 }
