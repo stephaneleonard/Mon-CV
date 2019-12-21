@@ -1,0 +1,186 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+form,
+li {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+i {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+p {
+  line-height: 145%;
+}
+
+/*-----------------------------------*/
+/*---------------HEADER--------------*/
+/*-----------------------------------*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-size: cover;
+  height: 500px;
+  width: auto;
+}
+
+header h1 {
+  padding-top: 200px;
+  font-size: 350%;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+  padding-bottom: 10px;
+}
+
+header h2 {
+  font-size: 200%;
+  font-weight: 200;
+  text-align: center;
+  color: white;
+}
+header p {
+  text-align: center;
+  color: white;
+}
+
+/*-----------------------------------*/
+/*---------------GRID----------------*/
+/*-----------------------------------*/
+
+main {
+  padding: 3.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.div-left,
+.div-right {
+  margin: 20px;
+}
+
+main section {
+  margin: 20px;
+  border: 2px solid #28536b;
+  border-radius: 10px;
+  padding: 2.5em;
+}
+
+main section h2 {
+  font-size: 170%;
+  font-weight: 200;
+  text-align: center;
+  border-bottom: 2px solid black;
+  margin: 40px 30%;
+}
+
+main section h3 {
+  font-size: 130%;
+  font-weight: bold;
+  color: #28536b;
+  padding: 30px 0px 10px 0px;
+}
+
+article p:first-of-type {
+  color: #28536b;
+}
+
+/*-------------SKILLS---------------*/
+.skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.skills li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/*-------------STARS---------------*/
+
+.skills li{
+  color: #797979;
+  transition: color 0.2s , font-size 0.2s;
+}
+
+.skills li:hover {
+  color: #28536b;
+  font-size: 110%;
+}
+
+main section ul {
+  list-style: circle;
+  padding-left: 20px;
+}
+main section li {
+  margin-top: 10px;
+}
+
+/*-------------HOBBIES---------------*/
+
+.grid-hobby {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+}
+
+.grid-hobby i {
+  font-size: 300%;
+  color: #28536b;
+}
+
+/*-----------------------------------*/
+/*-------------FOOTER----------------*/
+/*-----------------------------------*/
+
+footer {
+  background-color: rgb(53, 53, 53);
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer *:nth-child(even) {
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 820px) {
+  main {
+    padding: 1em;
+    display: block;
+  }
+
+  .skills {
+    display: block;
+  }
+  main section {
+    padding: 1em;
+  }
+
+  .grid-hobby {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+  }
+}
