@@ -184,4 +184,8 @@ footer *:nth-child(even) {
     grid-template-columns: 1fr 1fr;
     text-align: center;
   }
+  footer {
+    display: block;
+    text-align: center;
+  }
 }
