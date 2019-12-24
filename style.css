@@ -112,10 +112,10 @@ article p:first-of-type {
 
 /*-------------STARS---------------*/
 
-.skills li{
+.skills li {
   padding: 10px;
   color: #333333;
-  transition: color 0.2s , font-size 0.2s;
+  transition: color 0.2s, font-size 0.2s;
 }
 
 .skills li:hover {
@@ -166,6 +166,12 @@ footer *:nth-child(even) {
   margin-left: 10px;
 }
 
+@media only screen and (max-width: 1478px) {
+  .skills li {
+    display: inline;
+  }
+}
+
 @media only screen and (max-width: 820px) {
   main {
     padding: 1em;
@@ -175,6 +181,12 @@ footer *:nth-child(even) {
   .skills {
     display: block;
   }
+
+  .skills li {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   main section {
     padding: 1em;
   }
